@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📊 Crypto Price Tracker
+A full-stack web application that displays live prices and charts for Solana tokens, using public crypto APIs and a modern React-based dashboard.
 
-## Getting Started
+🚀 Tech Stack
+Frontend: Next.js (App Router)
 
-First, run the development server:
+State Management: React Query
 
-```bash
+Documentation: Docusaurus
+
+APIs Used:
+
+CoinGecko
+
+Jup.ag
+
+TradingView Widgets
+
+📁 Project Structure
+bash
+Copy
+Edit
+Crypto-Price-Tracker/
+├── web-app/       # Next.js project with live price tracker
+│   └── app/       # App Router files (layout.tsx, page.tsx, etc.)
+├── docs/          # Docusaurus documentation site
+├── README.md      # Project Overview
+🖥️ Getting Started
+1. Run the Next.js App
+bash
+Copy
+Edit
+cd web-app
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+📍 Open http://localhost:3000 to view the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Features:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🔍 Search Solana tokens
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔄 Manual refresh support
 
-## Learn More
+📈 Embedded TradingView token chart
 
-To learn more about Next.js, take a look at the following resources:
+💾 API data managed via React Query
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Run the Docusaurus Docs
+bash
+Copy
+Edit
+cd docs
+npm install
+npm run start
+📍 Visit http://localhost:3000 to view docs (runs on same port by default — stop the web-app server if needed).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Documentation includes:
 
-## Deploy on Vercel
+📦 Setup Instructions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+⚙️ API Integration Logic
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🧠 State Management Approach
+
+🧪 Challenges & Solutions
+
+📱 Responsive Design
+Built with mobile-first UI using CSS modules.
+
+Charts and token data scale responsively.
+
+🛠️ Error Handling
+Graceful loading states for slow API responses.
+
+Catch blocks for all fetch operations.
+
+Display fallback UIs when token data is unavailable.
+
+🧠 Why React Query?
+React Query was chosen for:
+
+Easy caching of token data
+
+Built-in refetching
+
+Simplified error and loading states
+
+Scalable data management
+
+⚙️ Improvements/Future Scope
+Add pagination and infinite scrolling
+
+Multi-token comparisons
+
+User authentication for watchlists
+
+Improved error boundary UI
+
